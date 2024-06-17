@@ -1,4 +1,5 @@
-from calc_func import do_addition,do_subtraction
+from calc_func import do_addition,do_subtraction,do_division
+from area imoprt calculate_area_reactangle
 from multiplu import do_multiplication
 def main():
     print("Welcome to the calculator app")
@@ -7,6 +8,8 @@ def main():
           1. Add
           2. Subtract
           3. Multiply
+          4. division
+          5. area
           """)
     
     user_input=input("Select the funcation")
@@ -17,7 +20,11 @@ def main():
     elif user_input == "2":
         result=do_subtraction(a,b)
     elif user_input =="3":
-        result=do_multiplication(a,b)    
+        result=do_multiplication(a,b) 
+    elif user_input =="4":
+        result=do_division(a,b)
+    elif user_input =="5":
+        result=calculate_area_reactangle(a,b)             
     print("Result",result)        
     
     
